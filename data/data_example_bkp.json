@@ -1,0 +1,90 @@
+[
+  {
+    "name" :  "BERTje",
+    "language" : "Dutch",
+    "training" : "Wikipedia",
+    "paper" : "Yes",
+    "venue" : "ACL",
+    "year" : 2019,
+    "pub_link" : "http://link",
+    "code_link" : "http://github",
+    "tasks" : [
+      {
+        "name" : "NER",
+        "dataset" : {
+          "name" : "CoNLL",
+          "link" : "http://qualcosa.com"
+        },
+        "measure" : "F1",
+        "performance" : "0.99",
+        "note" : ""
+      }
+    ]
+  },
+  {
+    "name" :  "Alberto",
+    "training" : "Wikipedia",
+    "language" : "Italian",
+    "paper" : "Yes",
+    "venue" : "ACL",
+    "year" : 2019,
+    "pub_link" : "http://link",
+    "code_link" : "http://github",
+    "tasks" : [
+      {
+        "name" : "SA",
+        "dataset" : {
+          "name" : "SemEval",
+          "link" : "http://qualcosa.com"
+        },
+        "measure" : "F1",
+        "performance" : "0.29",
+        "note" : ""
+      }
+    ]
+  },
+  {
+    "name" :  "Alberto2",
+    "training" : "Wikipedia",
+    "language" : "Italian",
+    "paper" : "Yes",
+    "venue" : "ACL",
+    "year" : 2019,
+    "pub_link" : "http://link",
+    "code_link" : "http://github",
+    "tasks" : [
+      {
+        "name" : "SA",
+        "dataset" : {
+          "name" : "SemEval",
+          "link" : "http://qualcosa.com"
+        },
+        "measure" : "F1",
+        "performance" : "0.59",
+        "note" : ""
+      }
+    ]
+  },
+  {
+    "name" :  "Bertino",
+    "training" : "Wikipedia",
+    "language" : "Italian",
+    "paper" : "Yes",
+    "venue" : "ACL",
+    "year" : 2019,
+    "pub_link" : "http://link",
+    "code_link" : "http://github",
+    "tasks" : [
+      {
+        "name" : "GA",
+        "dataset" : {
+          "name" : "SemEval",
+          "link" : "http://qualcosa.com"
+        },
+        "measure" : "F1",
+        "performance" : "0.29",
+        "note" : ""
+      }
+    ]
+  }
+]
