@@ -30,6 +30,7 @@
     },
     "dependencies": {
         "bootstrap": "4.3.1",
+        "flag-icon-css": "^3.4.6",
         "jquery": "3.4.1"
     },
     "devDependencies": {
