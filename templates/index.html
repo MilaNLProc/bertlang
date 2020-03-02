@@ -24,7 +24,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
-      <a class="navbar-brand" href="#">BertLang State-of-the-art Results</a>
+      <a class="navbar-brand" href="#">BertLang</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -55,28 +55,33 @@
       <div class="row">
         <div class="col-lg-8 col-md-7 col-sm-6">
           <h1>Bert Languages SOTA</h1>
-          <p class="lead">When half way through the journey of our life
-            I found that I was in a gloomy wood,
-            because the path which led to BERT was lost (Dante AlBERTghieri)</p>
+          <p class="lead">This is a collaborative resource to help researchers understand and find the best BERT model for a given dataset, task and language. The numbers here rely on self reported
+          performance (we can give no guarantees for their accuracy. In the future, we hope to independently verify each of the models).
+          </p>
+          <p class="lead"> We currently have indexed <strong>{{stats.number_of_models}} </strong> BERT-based models,
+            <strong>{{stats.number_of_languages}} </strong> Languages and <strong>{{stats.number_of_tasks}} </strong> Tasks.
+            We have a total of <strong>{{stats.number_of_entries}}</strong> entries in this table.  </p>
+          <p class="lead"> Curious about which is the best BERT model for named entity recognition in Italian <span class="flag-icon flag-icon-it"></span>? Type <em>"Italian NER"</em> in the search bar then!</p>
         </div>
-        <div class="col-lg-4 col-md-5 col-sm-6">
 
-        </div>
       </div>
     </div>
 
     <div class="row">
       <div class="col-md-12">
         <table id="example" class="table table-striped table-bordered">
-          <thead>
+          <thead class="thead-dark">
           <tr>
             <th>Language</th>
-            <th>Model Name</th>
+            <th>Model</th>
             <th>Task</th>
-            <th>Dataset</i></th>
+            <th>Dataset</th>
             <th>Dataset-Domain </th>
             <th>Evaluation Measure</th>
             <th>Performance</th>
+            <th>ML-BERT</th>
+            <th>Difference with ML-BERT</th>
+            <th>Source</th>
           </tr>
           </thead>
           <tbody>
@@ -86,26 +91,24 @@
             <td>{{row.language}} {{lang_to_flag[row.language] | safe }}</td>
             <td>{{row.name}}</td>
             <td><h5><span  data-toggle="tooltip" data-html="true" title="{{acronyms[task.name]}}" class="badge badge-primary">{{task.name}}</span></h5></td>
-            <td>{{task.dataset.name}}</td>
+            <td><a href="{{task.dataset.link}}">{{task.dataset.name}}</a></td>
             <td>{{task.dataset.domain}}</td>
             <td>{{task.measure}}</td>
-            <td><h5><span class="badge badge-pill badge-dark">{{task.performance}}</span></h5></td>
+            <td><h5><span class="badge badge-pill badge-success">{{task.performance}}</span></h5></td>
+
+            {% if  task.multi_lingual is not number  %}
+            <td><h5><span class="badge badge-pill badge-dark">NoData</span></h5></td>
+            <td><h5><span class="badge badge-pill badge-dark">NoData</span></h5></td>
+            {% else %}
+              <td><h5><span class="badge badge-pill badge-primary">{{task.multi_lingual}}</span></h5></td>
+              <td><h5><span class="badge badge-pill badge-light">{{task.multi_difference}}</span></h5></td>
+            {% endif%}
+            <td><a href="#" class="btn btn-info btn-sm active" role="button" aria-pressed="true">Source</a></td>
           </tr>
           {% endfor %}
           {% endfor %}
 
           </tbody>
-          <tfoot>
-          <tr>
-            <th>Language</th>
-            <th>Model Name</th>
-            <th>Task</th>
-            <th>Dataset</i></th>
-            <th>Dataset-Domain </th>
-            <th>Evaluation Measure</th>
-            <th>Performance</th>
-          </tr>
-          </tfoot>
         </table>
       </div>
     </div>

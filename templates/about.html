@@ -12,8 +12,105 @@
 
   <!-- Bootstrap core CSS -->
 
+
   <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
   <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+  <link href="{{ url_for('static', filename='bower_components/flag-icon-css/css/flag-icon.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='bower_components/components-font-awesome/css/all.css') }}" rel="stylesheet">
+
+  <style>
+
+    *:hover{
+      -webkit-transition: all 1s ease;
+      transition: all 1s ease;
+    }
+    section{
+      float:left;
+      width:100%;
+      background: #fff;  /* fallback for old browsers */
+      padding:30px 0;
+    }
+
+
+
+    /*Profile Card 1*/
+    .profile-card-1 {
+      font-family: 'Open Sans', Arial, sans-serif;
+      position: relative;
+      float: left;
+      overflow: hidden;
+      width: 100%;
+      color: #ffffff;
+      text-align: center;
+      height:368px;
+      border:none;
+    }
+    .profile-card-1 .background {
+      width:100%;
+      vertical-align: top;
+      opacity: 0.9;
+      -webkit-filter: blur(5px);
+      filter: blur(5px);
+      -webkit-transform: scale(1.8);
+      transform: scale(2.8);
+    }
+    .profile-card-1 .card-content {
+      width: 100%;
+      padding: 15px 25px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+    }
+    .profile-card-1 .profile {
+      border-radius: 50%;
+      position: absolute;
+      bottom: 50%;
+      left: 50%;
+      max-width: 100px;
+      opacity: 1;
+      box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+      border: 2px solid rgba(255, 255, 255, 1);
+      -webkit-transform: translate(-50%, 0%);
+      transform: translate(-50%, 0%);
+    }
+    .profile-card-1 h2 {
+      margin: 0 0 5px;
+      font-weight: 600;
+      font-size:25px;
+    }
+    .profile-card-1 h2 small {
+      display: block;
+      font-size: 15px;
+      margin-top:10px;
+    }
+    .profile-card-1 i {
+      display: inline-block;
+      font-size: 16px;
+      color: #ffffff;
+      text-align: center;
+      border: 1px solid #fff;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 50%;
+      margin:0 5px;
+    }
+    .profile-card-1 .icon-block{
+      float:left;
+      width:100%;
+      margin-top:15px;
+    }
+    .profile-card-1 .icon-block a{
+      text-decoration:none;
+    }
+    .profile-card-1 i:hover {
+      background-color:#fff;
+      color:#2E3434;
+      text-decoration:none;
+    }
+
+  </style>
 
 </head>
 
@@ -22,7 +119,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
-      <a class="navbar-brand" href="#">BertLang State-of-the-art Results</a>
+      <a class="navbar-brand" href="#">BertLang</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -52,57 +149,65 @@
     <div class="page-header" id="banner">
       <div class="row">
         <div class="col-lg-8 col-md-7 col-sm-6">
-          <h1>Bert Languages SOTA</h1>
-          <p class="lead">When half way through the journey of our life
-            I found that I was in a gloomy wood,
-            because the path which led to BERT was lost</p>
+          <h1>Bert Languages Team</h1>
         </div>
         <div class="col-lg-4 col-md-5 col-sm-6">
+
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="card profile-card-1">
+            <img src="https://images.pexels.com/photos/946351/pexels-photo-946351.jpeg?w=500&h=650&auto=compress&cs=tinysrgb" alt="profile-sample1" class="background"/>
+            <img src="{{ url_for('static', filename='img/mini_debora.jpg') }}" alt="profile-image" class="profile"/>
+            <div class="card-content">
+              <h2>Debora Nozza<small>Postdoctoral Researcher</small></h2>
+              <div class="icon-block"><a href="#">
+                <i class="fa fa-user"></i></a><a href="#">
+                <i class="fab fa-twitter"></i></a><a href="#">
+                <i class="fa fa-university"></i></a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+
+          <div class="card profile-card-1">
+            <img src="https://images.pexels.com/photos/946351/pexels-photo-946351.jpeg?w=500&h=650&auto=compress&cs=tinysrgb" alt="profile-sample1" class="background"/>
+            <img src="{{ url_for('static', filename='img/mini_fede.png') }}" alt="profile-image" class="profile"/>
+            <div class="card-content">
+              <h2>Federico Bianchi<small>Postdoctoral Researcher</small></h2>
+              <div class="icon-block"><a href="#">
+                <i class="fa fa-user"></i></a><a href="#">
+                <i class="fab fa-twitter"></i></a><a href="#">
+                <i class="fa fa-university"></i></a>
+              </div>            </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+
+          <div class="card profile-card-1">
+            <img src="https://images.pexels.com/photos/946351/pexels-photo-946351.jpeg?w=500&h=650&auto=compress&cs=tinysrgb" alt="profile-sample1" class="background"/>
+            <img src="{{ url_for('static', filename='img/mini_dirk.jpg') }}" alt="profile-image" class="profile"/>
+            <div class="card-content">
+              <h2>Dirk Hovy<small>Associate Professor</small></h2>
+              <div class="icon-block"><a href="#">
+                <i class="fa fa-user"></i></a><a href="#">
+                <i class="fab fa-twitter"></i></a><a href="#">
+                <i class="fa fa-university"></i></a>
+              </div>            </div>
+          </div>
 
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
-        <table id="example" class="table table-striped table-bordered" style="width:100%">
-          <thead>
-          <tr>
-            <th>Language</th>
-            <th>Model Name</th>
-            <th>Task</th>
-            <th>Dataset</th>
-            <th>Evaluation Measure</th>
-            <th>F1</th>
-          </tr>
-          </thead>
-          <tbody>
-          {% for row in json_data %}
-          {% for task in row.tasks %}
-          <tr>
-            <td>{{row.language}}</td>
-            <td>{{row.name}}</td>
-            <td>{{task.name}}</td>
-            <td>{{task.dataset.name}}</td>
-            <td>{{task.measure}}</td>
-            <td>{{task.performance}}</td>
-          </tr>
-          {% endfor %}
-          {% endfor %}
-
-          </tbody>
-          <tfoot>
-          <tr>
-            <th>Language</th>
-            <th>Model Name</th>
-            <th>Task</th>
-            <th>Dataset</th>
-            <th>Evaluation Measure</th>
-            <th>F1</th>
-          </tr>
-          </tfoot>
-        </table>
+        <p class="lead">Made with <i class="fa fa-heart"></i> by MilaNLP at Bocconi University</p>
       </div>
     </div>
+
 
   </div>
 
