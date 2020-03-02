@@ -2,6 +2,8 @@
 
 [BertLang](bertlang.unibocconi.it) is a webapp that contains info about BERT models.
 
+![Image description](https://raw.githubusercontent.com/MilaNLProc/bertlang/master/static/img/logo.png)
+
 ## Contributors
 
 + Debora Nozza - debora.nozza@unibocconi.it
