@@ -46,16 +46,20 @@
   <!-- Page Content -->
   <div class="container">
     <div class="page-header" id="banner">
+      <div class="text-center">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" class="img-fluid" alt="Responsive image">
+      </div>
+      <br>
       <div class="row">
-        <div class="col-lg-8 col-md-7 col-sm-6">
-          <h1>Bert Languages SOTA</h1>
-          <p class="lead">This is a collaborative resource to help researchers understand and find the best BERT model for a given dataset, task and language. The numbers here rely on self reported
-          performance (we can give no guarantees for their accuracy. In the future, we hope to independently verify each of the models).
-          </p>
+        <div class="col-md-12">
+          <h4>Lost in (language-specific) BERT models? we are here to help!</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
           <p class="lead"> We currently have indexed <strong>{{stats.number_of_models}} </strong> BERT-based models,
             <strong>{{stats.number_of_languages}} </strong> Languages and <strong>{{stats.number_of_tasks}} </strong> Tasks.
-            We have a total of <strong>{{stats.number_of_entries}}</strong> entries in this table.  </p>
-          <p class="lead"> Curious about which is the best BERT model for named entity recognition in Italian <span class="flag-icon flag-icon-it"></span>? Type <em>"Italian NER"</em> in the search bar then!</p>
+            We have a total of <strong>{{stats.number_of_entries}}</strong> entries in this table.  Curious about which is the best BERT model for named entity recognition in Italian <span class="flag-icon flag-icon-it"></span>? Type <em>"Italian NER"</em> in the search bar then!</p>
         </div>
 
       </div>
@@ -106,7 +110,14 @@
         </table>
       </div>
     </div>
-
+    <br>
+    <div class="row">
+      <div class="col-md-12">
+        <h5>This is a collaborative resource to help researchers understand and find the best BERT model for a given dataset, task and language. The numbers here rely on self reported
+          performance (we can give no guarantees for their accuracy. In the future, we hope to independently verify each of the models).
+        </h5>
+      </div>
+    </div>
   </div>
 
 
