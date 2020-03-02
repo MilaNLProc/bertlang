@@ -24,25 +24,19 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
-      <a class="navbar-brand" href="#">BertLang</a>
+      <a class="navbar-brand" href="{{ url_for('index') }}">BertLang</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home
+            <a class="nav-link" href="{{ url_for('index') }}">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="{{ url_for('about') }}">About</a>
           </li>
         </ul>
       </div>
@@ -97,13 +91,13 @@
             <td><h5><span class="badge badge-pill badge-success">{{task.performance}}</span></h5></td>
 
             {% if  task.multi_lingual is not number  %}
-            <td><h5><span class="badge badge-pill badge-dark">NoData</span></h5></td>
-            <td><h5><span class="badge badge-pill badge-dark">NoData</span></h5></td>
+            <td><h5><span class="badge badge-pill badge-dark">N/A</span></h5></td>
+            <td><h5><span class="badge badge-pill badge-dark">N/A</span></h5></td>
             {% else %}
               <td><h5><span class="badge badge-pill badge-primary">{{task.multi_lingual}}</span></h5></td>
               <td><h5><span class="badge badge-pill badge-light">{{task.multi_difference}}</span></h5></td>
             {% endif%}
-            <td><a href="#" class="btn btn-info btn-sm active" role="button" aria-pressed="true">Source</a></td>
+            <td><a href="{{task.source}}" class="btn btn-info btn-sm active" role="button" aria-pressed="true">Source</a></td>
           </tr>
           {% endfor %}
           {% endfor %}

@@ -16,7 +16,7 @@ language_to_flag = {
     "Finnish" : '<span class="flag-icon flag-icon-fi"></span>',
     "Turkish" : '<span class="flag-icon flag-icon-tr"></span>',
     "Arabic" : '<span class="flag-icon flag-icon-sa"></span>',
-    "Spanish" : '<span class="flag-icon flag-icon-sp"></span>'
+    "Spanish" : '<span class="flag-icon flag-icon-es"></span>'
 }
 
 acronyms = {
