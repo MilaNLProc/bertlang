@@ -60,7 +60,10 @@
         <div class="col-md-12">
           <p class="lead"> We currently have indexed <strong>{{stats.number_of_models}} </strong> BERT-based models,
             <strong>{{stats.number_of_languages}} </strong> Languages and <strong>{{stats.number_of_tasks}} </strong> Tasks.
-            We have a total of <strong>{{stats.number_of_entries}}</strong> entries in this table.  Curious about which is the best BERT model for named entity recognition in Italian <span class="flag-icon flag-icon-it"></span>? Type <em>"Italian NER"</em> in the search bar then!</p>
+            <br> We have a total of <strong>{{stats.number_of_entries}}</strong> entries in this table; we also show
+            <strong>Multilingual Bert (mBERT) </strong> results if available! <br> <br>
+            Curious about which is the best BERT model for named entity recognition in Italian <span class="flag-icon flag-icon-it"></span>? Type <em>"Italian NER"</em>
+            in the search bar then! <br> </p>
         </div>
 
       </div>
@@ -73,7 +76,7 @@
           <tr>
             <th>Language</th>
             <th>Model</th>
-            <th>Task</th>
+            <th>NLP Task</th>
             <th>Dataset</th>
             <th>Dataset-Domain </th>
             <th>Measure</th>

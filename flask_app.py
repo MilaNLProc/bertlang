@@ -17,7 +17,12 @@ language_to_flag = {
     "Turkish" : '<span class="flag-icon flag-icon-tr"></span>',
     "Arabic" : '<span class="flag-icon flag-icon-sa"></span>',
     "Spanish" : '<span class="flag-icon flag-icon-es"></span>',
-    "English" : '<span class="flag-icon flag-icon-us"></span>'
+    "English" : '<span class="flag-icon flag-icon-us"></span>',
+    "English" : '<span class="flag-icon flag-icon-us"></span>',
+    "Portuguese" : '<span class="flag-icon flag-icon-pt"></span>',
+    "Mongolian" : '<span class="flag-icon flag-icon-mn"></span>',
+    "Korean" : '<span class="flag-icon flag-icon-kr"></span>',
+    "Thai" : '<span class="flag-icon flag-icon-th"></span>'
 }
 
 acronyms = {
