@@ -16,7 +16,8 @@ language_to_flag = {
     "Finnish" : '<span class="flag-icon flag-icon-fi"></span>',
     "Turkish" : '<span class="flag-icon flag-icon-tr"></span>',
     "Arabic" : '<span class="flag-icon flag-icon-sa"></span>',
-    "Spanish" : '<span class="flag-icon flag-icon-es"></span>'
+    "Spanish" : '<span class="flag-icon flag-icon-es"></span>',
+    "English" : '<span class="flag-icon flag-icon-us"></span>'
 }
 
 acronyms = {
@@ -43,6 +44,13 @@ acronyms = {
      "DDD"	: "Die/Dat Disambiguation",
      "MRC"	: "Machine Reading Comprehension",
      "SPM"	: "Sentence Pair Matching",
+     "POS (coarse)" :	"Part of Speech Tagging",
+     "POS (fine-grained)"	: "Part of Speech Tagging",
+     "LA"	: "Linguistic Acceptability",
+     "TER"	:"Textual Entailment Recognition",
+     "QA"	: "Question Answering",
+     "CI"	: "Commonsense Inference",
+     "RC"	: "Reading Comprehension"
 }
 
 
@@ -82,4 +90,4 @@ def about():
     return render_template("./about.html")
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=8000, debug=True)
+    app.run(host='0.0.0.0', port=8000)
