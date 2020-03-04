@@ -27,7 +27,7 @@ language_to_flag = {
 }
 
 acronyms = {
-    "PST":	"Part of Speech Tagging",
+    "POS":	"Part of Speech Tagging",
     "DP":	"Dependency Parsing",
     "NER":	"Named Entity Recognition",
     "NLI":	"Natural Language Inference",
