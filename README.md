@@ -7,85 +7,57 @@
 ## How to Contribute
 
 Do you want to add a new model? we currently store all the information in a .json file `static/data/data_example.json`. 
-See the following example for the Spanish BERT, BETO.
+See the following example for the Italian BERT, ALBERTO.
 
 ```json
  {
-    "name": "BETO",
-    "language": "Spanish",
-    "tasks": [
-      {
-        "source": "https://github.com/dccuchile/beto",
-        "code": "https://github.com/dccuchile/beto",
-        "name": "POS",
-        "dataset": {
-          "name": "Turku Dependency Treebank",
-          "link": "https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-1827",
-          "domain": "wiki, news, blog, speech, legislative, fiction"
-        },
-        "measure": "UPOS",
-        "performance": 98.97,
-        "multi_lingual": 97.1,
-        "multi_difference": 1.87
-      },
-      {
-        "name": "NER",
-        "source": "https://github.com/dccuchile/beto",
-        "code": "https://github.com/dccuchile/beto",
-        "dataset": {
-          "name": "CoNLL 2000, 2002, 2007",
-          "link": "https://www.kaggle.com/nltkdata/conll-corpora",
-          "domain": "news"
-        },
-        "measure": "F1",
-        "performance": 88.43,
-        "multi_lingual": 87.38,
-        "multi_difference": 1.05
-      },
-      {
-        "name": "TC",
-        "source": "https://github.com/dccuchile/beto",
-        "code": "https://github.com/dccuchile/beto",
-        "dataset": {
-          "name": "MLDoc",
-          "link": "https://github.com/facebookresearch/MLDoc",
-          "domain": "news"
-        },
-        "measure": "Accuracy",
-        "performance": 95.6,
-        "multi_lingual": 95.7,
-        "multi_difference": -0.1
-      },
-      {
-        "name": "PI",
-        "source": "https://github.com/dccuchile/beto",
-        "code": "https://github.com/dccuchile/beto",
-        "dataset": {
-          "name": "PAWS-X",
-          "link": "https://github.com/google-research-datasets/paws/tree/master/pawsx",
-          "domain": "wiki"
-        },
-        "measure": "Accuracy",
-        "performance": 89.05,
-        "multi_lingual": 90.7,
-        "multi_difference": -1.65
-      },
-      {
-        "name": "NLI",
-        "source": "https://github.com/dccuchile/beto",
-        "code": "https://github.com/dccuchile/beto",
-        "dataset": {
-          "name": "XNLI",
-          "link": "https://github.com/facebookresearch/XNLI",
-          "domain": "transcription, politics, news, literature, misc"
-        },
-        "measure": "Accuracy",
-        "performance": 82.01,
-        "multi_lingual": 78.5,
-        "multi_difference": 3.51
-      }
-    ]
-  }
+     "name": "ALBERTO",
+     "language": "Italian",
+     "tasks": [
+       {
+         "source": "http://ceur-ws.org/Vol-2481/paper57.pdf",
+         "code": "https://github.com/marcopoli/AlBERTo-it",
+         "name": "SA",
+         "dataset": {
+           "name": "SENTIPOLC 2016",
+           "link": "http://www.di.unito.it/~tutreeb/sentipolc-evalita16/data.html",
+           "domain": "twitter"
+         },
+         "measure": "F1 (test)",
+         "performance": 72.23,
+         "multi_lingual": "nan",
+         "multi_difference": "nan"
+       },
+       {
+         "name": "SC",
+         "source": "http://ceur-ws.org/Vol-2481/paper57.pdf",
+         "code": "https://github.com/marcopoli/AlBERTo-it",
+         "dataset": {
+           "name": "SENTIPOLC 2016",
+           "link": "http://www.di.unito.it/~tutreeb/sentipolc-evalita16/data.html",
+           "domain": "twitter"
+         },
+         "measure": "F1 (test)",
+         "performance": 79.06,
+         "multi_lingual": "nan",
+         "multi_difference": "nan"
+       },
+       {
+         "name": "ID",
+         "source": "http://ceur-ws.org/Vol-2481/paper57.pdf",
+         "code": "https://github.com/marcopoli/AlBERTo-it",
+         "dataset": {
+           "name": "SENTIPOLC 2016",
+           "link": "http://www.di.unito.it/~tutreeb/sentipolc-evalita16/data.html",
+           "domain": "twitter"
+         },
+         "measure": "F1 (test)",
+         "performance": 60.9,
+         "multi_lingual": "nan",
+         "multi_difference": "nan"
+       }
+     ]
+   }
 ```
 
 We are keeping this structure that is easy to parse and to check. If you find errors or you have something to add, you can modify it and send us a pull requests
