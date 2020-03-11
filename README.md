@@ -1,13 +1,19 @@
-# [BertLang](bertlang.unibocconi.it)
+# [BertLang](https://bertlang.unibocconi.it)
 
-[BertLang](bertlang.unibocconi.it) is a webapp that contains info about BERT models.
+[BertLang](https://bertlang.unibocconi.it) is a webapp that contains info about language-specific BERT models.
 
 ![Image description](https://raw.githubusercontent.com/MilaNLProc/bertlang/master/static/img/logo.png)
 
+
+
 ## How to Contribute
 
-Do you want to add a new model? we currently store all the information in a .json file `static/data/data_example.json`. 
-See the following example for the Italian BERT, ALBERTO.
+This is a **collaborative** resource to help researchers understand and find the best BERT model for a given dataset, task and language. The numbers here rely on self reported performance (we can give no guarantees for their accuracy. In the future, we hope to independently verify each of the models).
+
+We currently store all the information in a .json file `static/data/data_example.json`. We are keeping this structure that is easy to parse and to check.
+*Do you want to add a new model or suggest updates?* Send us a pull request!
+
+See the following example for the Italian BERT model, ALBERTO.
 
 ```json
  {
@@ -60,13 +66,11 @@ See the following example for the Italian BERT, ALBERTO.
    }
 ```
 
-We are keeping this structure that is easy to parse and to check. If you find errors or you have something to add, you can modify it and send us a pull requests
-
 ## Contributors
 
-+ Debora Nozza - debora.nozza@unibocconi.it
-+ Federico Bianchi - federico.bianchi@unibocconi.it
-+ Dirk Hovy - dirk.hovy@unibocconi.it
++ Debora Nozza - [Twitter](http://twitter.com/debora_nozza) | [Personal Website](http://dnozza.github.io/) | debora.nozza@unibocconi.it
++ Federico Bianchi - [Twitter](http://twitter.com/fb_vinid) | [Personal Website](http://vinid.io/) | federico.bianchi@unibocconi.it
++ Dirk Hovy - [Twitter](http://twitter.com/dirk_hovy) | [Personal Website](http://dirkhovy.com/) |  dirk.hovy@unibocconi.it
 
 ## Copyright and License
 
