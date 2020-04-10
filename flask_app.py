@@ -22,7 +22,8 @@ language_to_flag = {
     "Mongolian" : '<span class="flag-icon flag-icon-mn"></span>',
     "Korean" : '<span class="flag-icon flag-icon-kr"></span>',
     "Thai" : '<span class="flag-icon flag-icon-th"></span>',
-    "Yorùbá" : '<span class="flag-icon flag-icon-ng"></span>'
+    "Yorùbá" : '<span class="flag-icon flag-icon-ng"></span>',
+    "Philipino": '<span class="flag-icon flag-icon-ph"></span>'
 }
 
 acronyms = {
