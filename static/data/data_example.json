@@ -1208,6 +1208,62 @@
                 "performance": 82.01,
                 "multi_lingual": 78.5,
                 "multi_difference": 3.51
+            },
+            {
+                "name": "SA",
+                "source": "https://arxiv.org/pdf/2111.09453.pdf",
+                "code": "https://github.com/pysentimiento/robertuito",
+                "dataset": {
+                    "name": "TASS 2020",
+                    "link": "http://tass.sepln.org/2020/",
+                    "domain": "twitter"
+                },
+                "measure": "F1 (test)",
+                "performance": 66.5,
+                "multi_lingual": "nan",
+                "multi_difference": "nan"
+            },
+            {
+                "name": "Emotion Analysis",
+                "source": "https://arxiv.org/pdf/2111.09453.pdf",
+                "code": "https://github.com/pysentimiento/robertuito",
+                "dataset": {
+                    "name": "TASS 2020",
+                    "link": "http://tass.sepln.org/2020/",
+                    "domain": "twitter"
+                },
+                "measure": "F1 (test)",
+                "performance": 52.1,
+                "multi_lingual": "nan",
+                "multi_difference": "nan"
+            },
+            {
+                "name": "Hate Speech Detection",
+                "source": "https://arxiv.org/pdf/2111.09453.pdf",
+                "code": "https://github.com/pysentimiento/robertuito",
+                "dataset": {
+                    "name": "SemEval 2019 Task 5: HatEval",
+                    "link": "https://competitions.codalab.org/competitions/19935",
+                    "domain": "twitter"
+                },
+                "measure": "F1 (test)",
+                "performance": 76.8,
+                "multi_lingual": "nan",
+                "multi_difference": "nan"
+            },
+            {
+                "name": "ID",
+                "source": "https://arxiv.org/pdf/2111.09453.pdf",
+                "code": "https://github.com/pysentimiento/robertuito",
+                "dataset": {
+                    "name": "SemEval 2019 Task 5: HatEval",
+                    "link": "https://www.autoritas.net/IroSvA2019/",
+                    "domain": "social media"
+                },
+                "measure": "F1 (test)",
+                "performance": 70.6,
+                "multi_lingual": "nan",
+                "multi_difference": "nan"
             }
         ]
     },
@@ -2672,6 +2728,192 @@
                 },
                 "measure": "Accuracy",
                 "performance": 88.17,
+                "multi_lingual": "nan",
+                "multi_difference": "nan"
+            }
+        ]
+    },
+    {
+        "name": "RoBERTuito",
+        "language": "Spanish",
+        "tasks": [
+            {
+                "name": "SA",
+                "source": "https://arxiv.org/pdf/2111.09453.pdf",
+                "code": "https://github.com/pysentimiento/robertuito",
+                "dataset": {
+                    "name": "TASS 2020",
+                    "link": "http://tass.sepln.org/2020/",
+                    "domain": "twitter"
+                },
+                "measure": "F1 (test)",
+                "performance": 70.07,
+                "multi_lingual": "nan",
+                "multi_difference": "nan"
+            },
+            {
+                "name": "Emotion Analysis",
+                "source": "https://arxiv.org/pdf/2111.09453.pdf",
+                "code": "https://github.com/pysentimiento/robertuito",
+                "dataset": {
+                    "name": "TASS 2020",
+                    "link": "http://tass.sepln.org/2020/",
+                    "domain": "twitter"
+                },
+                "measure": "F1 (test)",
+                "performance": 55.1,
+                "multi_lingual": "nan",
+                "multi_difference": "nan"
+            },
+            {
+                "name": "Hate Speech Detection",
+                "source": "https://arxiv.org/pdf/2111.09453.pdf",
+                "code": "https://github.com/pysentimiento/robertuito",
+                "dataset": {
+                    "name": "SemEval 2019 Task 5: HatEval",
+                    "link": "https://competitions.codalab.org/competitions/19935",
+                    "domain": "twitter"
+                },
+                "measure": "F1 (test)",
+                "performance": 80.1,
+                "multi_lingual": "nan",
+                "multi_difference": "nan"
+            },
+            {
+                "name": "ID",
+                "source": "https://arxiv.org/pdf/2111.09453.pdf",
+                "code": "https://github.com/pysentimiento/robertuito",
+                "dataset": {
+                    "name": "SemEval 2019 Task 5: HatEval",
+                    "link": "https://www.autoritas.net/IroSvA2019/",
+                    "domain": "social media"
+                },
+                "measure": "F1 (test)",
+                "performance": 74.0,
+                "multi_lingual": "nan",
+                "multi_difference": "nan"
+            }
+        ]
+    },
+    {
+        "name": "Spanish RoBERTa",
+        "language": "Spanish",
+        "tasks": [
+            {
+                "name": "SA",
+                "source": "https://arxiv.org/pdf/2111.09453.pdf",
+                "code": "https://github.com/pysentimiento/robertuito",
+                "dataset": {
+                    "name": "TASS 2020",
+                    "link": "http://tass.sepln.org/2020/",
+                    "domain": "twitter"
+                },
+                "measure": "F1 (test)",
+                "performance": 66.9,
+                "multi_lingual": "nan",
+                "multi_difference": "nan"
+            },
+            {
+                "name": "Emotion Analysis",
+                "source": "https://arxiv.org/pdf/2111.09453.pdf",
+                "code": "https://github.com/pysentimiento/robertuito",
+                "dataset": {
+                    "name": "TASS 2020",
+                    "link": "http://tass.sepln.org/2020/",
+                    "domain": "twitter"
+                },
+                "measure": "F1 (test)",
+                "performance": 53.3,
+                "multi_lingual": "nan",
+                "multi_difference": "nan"
+            },
+            {
+                "name": "Hate Speech Detection",
+                "source": "https://arxiv.org/pdf/2111.09453.pdf",
+                "code": "https://github.com/pysentimiento/robertuito",
+                "dataset": {
+                    "name": "SemEval 2019 Task 5: HatEval",
+                    "link": "https://competitions.codalab.org/competitions/19935",
+                    "domain": "twitter"
+                },
+                "measure": "F1 (test)",
+                "performance": 76.6,
+                "multi_lingual": "nan",
+                "multi_difference": "nan"
+            },
+            {
+                "name": "ID",
+                "source": "https://arxiv.org/pdf/2111.09453.pdf",
+                "code": "https://github.com/pysentimiento/robertuito",
+                "dataset": {
+                    "name": "SemEval 2019 Task 5: HatEval",
+                    "link": "https://www.autoritas.net/IroSvA2019/",
+                    "domain": "social media"
+                },
+                "measure": "F1 (test)",
+                "performance": 72.3,
+                "multi_lingual": "nan",
+                "multi_difference": "nan"
+            }
+        ]
+    },
+    {
+        "name": "BERTin",
+        "language": "Spanish",
+        "tasks": [
+            {
+                "name": "SA",
+                "source": "https://arxiv.org/pdf/2111.09453.pdf",
+                "code": "https://github.com/pysentimiento/robertuito",
+                "dataset": {
+                    "name": "TASS 2020",
+                    "link": "http://tass.sepln.org/2020/",
+                    "domain": "twitter"
+                },
+                "measure": "F1 (test)",
+                "performance": 66.5,
+                "multi_lingual": "nan",
+                "multi_difference": "nan"
+            },
+            {
+                "name": "Emotion Analysis",
+                "source": "https://arxiv.org/pdf/2111.09453.pdf",
+                "code": "https://github.com/pysentimiento/robertuito",
+                "dataset": {
+                    "name": "TASS 2020",
+                    "link": "http://tass.sepln.org/2020/",
+                    "domain": "twitter"
+                },
+                "measure": "F1 (test)",
+                "performance": 51.8,
+                "multi_lingual": "nan",
+                "multi_difference": "nan"
+            },
+            {
+                "name": "Hate Speech Detection",
+                "source": "https://arxiv.org/pdf/2111.09453.pdf",
+                "code": "https://github.com/pysentimiento/robertuito",
+                "dataset": {
+                    "name": "SemEval 2019 Task 5: HatEval",
+                    "link": "https://competitions.codalab.org/competitions/19935",
+                    "domain": "twitter"
+                },
+                "measure": "F1 (test)",
+                "performance": 76.7,
+                "multi_lingual": "nan",
+                "multi_difference": "nan"
+            },
+            {
+                "name": "ID",
+                "source": "https://arxiv.org/pdf/2111.09453.pdf",
+                "code": "https://github.com/pysentimiento/robertuito",
+                "dataset": {
+                    "name": "SemEval 2019 Task 5: HatEval",
+                    "link": "https://www.autoritas.net/IroSvA2019/",
+                    "domain": "social media"
+                },
+                "measure": "F1 (test)",
+                "performance": 71.6,
                 "multi_lingual": "nan",
                 "multi_difference": "nan"
             }
