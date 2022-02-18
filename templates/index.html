@@ -90,7 +90,7 @@
           {% for row in json_data %}
           {% for task in row.tasks %}
           <tr>
-            <td>{{row.language}} {{lang_to_flag[row.language] | safe }}</td>
+            <td>{{row.language}}</td>
             <td>{{row.name}}</td>
             <td><h5><span  data-toggle="tooltip" data-html="true" title="{{acronyms[task.name]}}" class="badge badge-primary">{{task.name}}</span></h5></td>
             <td><a href="{{task.dataset.link}}">{{task.dataset.name}}</a></td>
