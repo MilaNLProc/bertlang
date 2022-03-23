@@ -97,6 +97,8 @@ Please refer to this table for using the correct NLP task acronym.
 | SPM                | Sentence Pair Matching            |
 | POS (coarse)       | Part of Speech Tagging            |
 | POS (fine-grained) | Part of Speech Tagging            |
+| XPOS               | Language-specific POS tagging     |
+| Morph              | Morphological tagging             |
 | LA                 | Linguistic Acceptability          |
 | TER                | Textual Entailment Recognition    |
 | QA                 | Question Answering                |
