@@ -93,7 +93,7 @@
          "code": "https://huggingface.co/tartuNLP/EstBERT",
          "dataset": {
            "name": "Estonian Valency Corpus",
-           "link": "https://metashare.ut.ee/repository/browse/valentsikorpus/7555e30ca68411e6a6e4005056b4002475de9b8de66c4804b437e33bf6eda9e2/"
+           "link": "https://metashare.ut.ee/repository/browse/valentsikorpus/7555e30ca68411e6a6e4005056b4002475de9b8de66c4804b437e33bf6eda9e2/",
            "domain": "news"
          },
          "measure": "Accuracy",
@@ -107,7 +107,7 @@
          "code": "https://huggingface.co/tartuNLP/EstBERT",
          "dataset": {
            "name": "EstNER",
-           "link": "https://metashare.ut.ee/repository/browse/estonian-ner-corpus/88d030c0acde11e2a6e4005056b40024f1def472ed254e77a8952e1003d9f81e/"
+           "link": "https://metashare.ut.ee/repository/browse/estonian-ner-corpus/88d030c0acde11e2a6e4005056b40024f1def472ed254e77a8952e1003d9f81e/",
            "domain": "news"
          },
          "measure": "F1",
@@ -183,7 +183,7 @@
          "code": "https://huggingface.co/tartuNLP/EstBERT_512",
          "dataset": {
            "name": "Estonian Valency Corpus",
-           "link": "https://metashare.ut.ee/repository/browse/valentsikorpus/7555e30ca68411e6a6e4005056b4002475de9b8de66c4804b437e33bf6eda9e2/"
+           "link": "https://metashare.ut.ee/repository/browse/valentsikorpus/7555e30ca68411e6a6e4005056b4002475de9b8de66c4804b437e33bf6eda9e2/",
            "domain": "news"
          },
          "measure": "Accuracy",
@@ -197,7 +197,7 @@
          "code": "https://huggingface.co/tartuNLP/EstBERT_512",
          "dataset": {
            "name": "EstNER",
-           "link": "https://metashare.ut.ee/repository/browse/estonian-ner-corpus/88d030c0acde11e2a6e4005056b40024f1def472ed254e77a8952e1003d9f81e/"
+           "link": "https://metashare.ut.ee/repository/browse/estonian-ner-corpus/88d030c0acde11e2a6e4005056b40024f1def472ed254e77a8952e1003d9f81e/",
            "domain": "news"
          },
          "measure": "F1",
