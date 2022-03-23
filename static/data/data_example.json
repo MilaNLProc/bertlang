@@ -1,5 +1,213 @@
 [
   {
+     "name": "EstBERT (128)",
+     "language": "Estonian",
+     "tasks": [
+       {
+         "name": "POS (coarse)",
+         "source": "https://aclanthology.org/2021.nodalida-main.2.pdf",
+         "code": "https://huggingface.co/tartuNLP/EstBERT",
+         "dataset": {
+           "name": "UDv2.5 EDT",
+           "link": "http://hdl.handle.net/11234/1-3105",
+           "domain": "fiction, newspapers, scientific texts"
+         },
+         "measure": "Accuracy",
+         "performance": 97.89,
+         "multi_lingual": 97.42,
+         "multi_difference": 0.47
+       },
+       {
+         "name": "XPOS",
+         "source": "https://aclanthology.org/2021.nodalida-main.2.pdf",
+         "code": "https://huggingface.co/tartuNLP/EstBERT",
+         "dataset": {
+           "name": "UDv2.5 EDT",
+           "link": "http://hdl.handle.net/11234/1-3105",
+           "domain": "fiction, newspapers, scientific texts"
+         },
+         "measure": "Accuracy",
+         "performance": 98.40,
+         "multi_lingual": 98.06,
+         "multi_difference": 0.34
+       },
+      {
+         "name": "Morph",
+         "source": "https://aclanthology.org/2021.nodalida-main.2.pdf",
+         "code": "https://huggingface.co/tartuNLP/EstBERT",
+         "dataset": {
+           "name": "UDv2.5 EDT",
+           "link": "http://hdl.handle.net/11234/1-3105",
+           "domain": "fiction, newspapers, scientific texts"
+         },
+         "measure": "Accuracy",
+         "performance": 96.93,
+         "multi_lingual": 96.24,
+         "multi_difference": 0.69
+       },
+       {
+         "name": "DP",
+         "source": "https://aclanthology.org/2021.nodalida-main.2.pdf",
+         "code": "https://huggingface.co/tartuNLP/EstBERT",
+         "dataset": {
+           "name": "UDv2.5 EDT",
+           "link": "http://hdl.handle.net/11234/1-3105",
+           "domain": "fiction, newspapers, scientific texts"
+         },
+         "measure": "LAS",
+         "performance": 83.94,
+         "multi_lingual": "nan",
+         "multi_difference": "nan"
+       },
+        {
+         "name": "DP",
+         "source": "https://aclanthology.org/2021.nodalida-main.2.pdf",
+         "code": "https://huggingface.co/tartuNLP/EstBERT",
+         "dataset": {
+           "name": "UDv2.5 EDT",
+           "link": "http://hdl.handle.net/11234/1-3105",
+           "domain": "fiction, newspapers, scientific texts"
+         },
+         "measure": "UAS",
+         "performance": 86.70,
+         "multi_lingual": "nan",
+         "multi_difference": "nan"
+       },
+       {
+         "name": "TC",
+         "source": "https://aclanthology.org/2021.nodalida-main.2.pdf",
+         "code": "https://huggingface.co/tartuNLP/EstBERT",
+         "dataset": {
+           "name": "Estonian Valency Corpus",
+           "link": "https://metashare.ut.ee/repository/browse/valentsikorpus/7555e30ca68411e6a6e4005056b4002475de9b8de66c4804b437e33bf6eda9e2/",
+           "domain": "news"
+         },
+         "measure": "Accuracy",
+         "performance": 81.70,
+         "multi_lingual": 75.67,
+         "multi_difference": 6.03
+       },
+     {
+         "name": "SA",
+         "source": "https://aclanthology.org/2021.nodalida-main.2.pdf",
+         "code": "https://huggingface.co/tartuNLP/EstBERT",
+         "dataset": {
+           "name": "Estonian Valency Corpus",
+           "link": "https://metashare.ut.ee/repository/browse/valentsikorpus/7555e30ca68411e6a6e4005056b4002475de9b8de66c4804b437e33bf6eda9e2/"
+           "domain": "news"
+         },
+         "measure": "Accuracy",
+         "performance": 74.36,
+         "multi_lingual": 70.23,
+         "multi_difference": 4.13
+       },
+     {
+         "name": "NER",
+         "source": "https://aclanthology.org/2021.nodalida-main.2.pdf",
+         "code": "https://huggingface.co/tartuNLP/EstBERT",
+         "dataset": {
+           "name": "EstNER",
+           "link": "https://metashare.ut.ee/repository/browse/estonian-ner-corpus/88d030c0acde11e2a6e4005056b40024f1def472ed254e77a8952e1003d9f81e/"
+           "domain": "news"
+         },
+         "measure": "F1",
+         "performance": 90.11,
+         "multi_lingual": 86.51,
+         "multi_difference": 3.60
+       }
+     ]
+   },
+  {
+     "name": "EstBERT (512)",
+     "language": "Estonian",
+     "tasks": [
+       {
+         "name": "POS (coarse)",
+         "source": "https://aclanthology.org/2021.nodalida-main.2.pdf",
+         "code": "https://huggingface.co/tartuNLP/EstBERT_512",
+         "dataset": {
+           "name": "UDv2.5 EDT",
+           "link": "http://hdl.handle.net/11234/1-3105",
+           "domain": "fiction, newspapers, scientific texts"
+         },
+         "measure": "Accuracy",
+         "performance": 97.84,
+         "multi_lingual": 97.43,
+         "multi_difference": 0.41
+       },
+       {
+         "name": "XPOS",
+         "source": "https://aclanthology.org/2021.nodalida-main.2.pdf",
+         "code": "https://huggingface.co/tartuNLP/EstBERT_512",
+         "dataset": {
+           "name": "UDv2.5 EDT",
+           "link": "http://hdl.handle.net/11234/1-3105",
+           "domain": "fiction, newspapers, scientific texts"
+         },
+         "measure": "Accuracy",
+         "performance": 98.43,
+         "multi_lingual": 98.13,
+         "multi_difference": 0.30
+       },
+      {
+         "name": "Morph",
+         "source": "https://aclanthology.org/2021.nodalida-main.2.pdf",
+         "code": "https://huggingface.co/tartuNLP/EstBERT_512",
+         "dataset": {
+           "name": "UDv2.5 EDT",
+           "link": "http://hdl.handle.net/11234/1-3105",
+           "domain": "fiction, newspapers, scientific texts"
+         },
+         "measure": "Accuracy",
+         "performance": 96.80,
+         "multi_lingual": 96.13,
+         "multi_difference": 0.67
+       },
+       {
+         "name": "TC",
+         "source": "https://aclanthology.org/2021.nodalida-main.2.pdf",
+         "code": "https://huggingface.co/tartuNLP/EstBERT_512",
+         "dataset": {
+           "name": "Estonian Valency Corpus",
+           "link": "https://metashare.ut.ee/repository/browse/valentsikorpus/7555e30ca68411e6a6e4005056b4002475de9b8de66c4804b437e33bf6eda9e2/",
+           "domain": "news"
+         },
+         "measure": "Accuracy",
+         "performance": 80.96,
+         "multi_lingual": 74.94,
+         "multi_difference": 6.02
+       },
+     {
+         "name": "SA",
+         "source": "https://aclanthology.org/2021.nodalida-main.2.pdf",
+         "code": "https://huggingface.co/tartuNLP/EstBERT_512",
+         "dataset": {
+           "name": "Estonian Valency Corpus",
+           "link": "https://metashare.ut.ee/repository/browse/valentsikorpus/7555e30ca68411e6a6e4005056b4002475de9b8de66c4804b437e33bf6eda9e2/"
+           "domain": "news"
+         },
+         "measure": "Accuracy",
+         "performance": 74.50,
+         "multi_lingual": 69.52,
+         "multi_difference": 4.98
+       },
+     {
+         "name": "NER",
+         "source": "https://aclanthology.org/2021.nodalida-main.2.pdf",
+         "code": "https://huggingface.co/tartuNLP/EstBERT_512",
+         "dataset": {
+           "name": "EstNER",
+           "link": "https://metashare.ut.ee/repository/browse/estonian-ner-corpus/88d030c0acde11e2a6e4005056b40024f1def472ed254e77a8952e1003d9f81e/"
+           "domain": "news"
+         },
+         "measure": "F1",
+         "performance": 89.04,
+         "multi_lingual": 88.37,
+         "multi_difference": 0.67
+       }
+     ]
+   },
+  {
     "name": "BERTeus",
     "language": "Basque",
     "tasks": [
